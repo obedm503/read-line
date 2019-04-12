@@ -1,0 +1,37 @@
+{
+  "name": "@obedm503/read-line",
+  "version": "0.1.0",
+  "description": "read a stream line by line",
+  "main": "dist/index.js",
+  "repository": "https://github.com/obedm503/read-line.git",
+  "author": "obedm503",
+  "license": "MIT",
+  "private": false,
+  "unpkg": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "tsc",
+    "test": "ava --verbose"
+  },
+  "ava": {
+    "compileEnhancements": false,
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.4",
+    "ava": "^1.4.1",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.3"
+  },
+  "engines": {
+    "node": "^10.10.0"
+  }
+}
